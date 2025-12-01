@@ -68,10 +68,10 @@ for i, tail in enumerate(graph.vertices):
 
 
 import matplotlib.pyplot as plt
-plt.figure()
-plt.axis("equal")
-graph.plot_2d()
-plt.show()
+# plt.figure()
+# plt.axis("equal")
+# graph.plot_2d()
+# plt.show()
 
 graph.solve_traveling_salesman(subtour_elimination=True)
 print("Problem status:", graph.status)
@@ -79,6 +79,6 @@ print("Optimal value:", graph.value)
 print(graph.solver_stats)
 plt.figure()
 plt.axis("equal")
-graph.plot_2d()
+# graph.plot_2d()
 graph.plot_2d_solution()
 plt.show()

@@ -60,7 +60,7 @@ if __name__ == '__main__':
     objective = get_objective_function_MTZ(C, X)
     constraints = form_constraints(4, X, u)
     program = cp.Problem(objective, constraints)
-    program.solve('MOSEK', verbose=False)
+    program.solve('MOSEK', verbose=True)
     # print(X.value)
     print(np.sum(X.value @ C))
 
