@@ -52,7 +52,7 @@ for i, tail in enumerate(graph.vertices):
                 # Edge cost is Euclidean distance.
                 x_tail = tail.variables[0]
                 x_head = head.variables[0]
-                edge.add_cost(cp.norm2(x_head - x_tail))
+                edge.add_cost(cp.norm2(x_head - x_tail)) 
 
 # Run following code only if this file is executed directly, and not when it is
 # imported by other files.

@@ -62,6 +62,8 @@ if __name__ == '__main__':
     program = cp.Problem(objective, constraints)
     program.solve('MOSEK', verbose=True)
     # print(X.value)
-    print(np.sum(X.value @ C))
+    print(C)
+    print(X.value)
+    print(np.sum(X.value * C))
 
 
